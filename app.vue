@@ -23,7 +23,9 @@ const pageKey = computed(() => route.fullPath)
 
 provide('handleScroll', handleScroll);
 onMounted(async ()=>{
-  await get('/saveip')
+  // Vercel deployment phase:
+  // disable IP statistics until the database-backed API is migrated.
+  // await get('/saveip')
 
   if(window.screen.width<768){
     counter.changeApp(true)

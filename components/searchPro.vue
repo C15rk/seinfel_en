@@ -260,7 +260,9 @@ function search() {
   // 如果找到结果，跳转到对应的 URL，否则提示用户没有找到
   if (result.value) {
     router.push(result.value.url);
-    get('/saveKeyWord', { keyWord: lowerCaseQuery });
+    // Vercel deployment phase:
+    // disable keyword statistics until the database-backed API is migrated.
+    // get('/saveKeyWord', { keyWord: lowerCaseQuery });
   } else {
     alert('If you can\'t find it, please enter the full name or part of the name');
   }

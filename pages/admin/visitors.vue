@@ -18,42 +18,52 @@ let sum=ref('')
 let total=ref(50)
 let page=ref(1)
 let pageSize=ref(10)
+const statsDisabled = true
 function changPage(num){
+  if (statsDisabled) {
+    return
+  }
   page.value=num
-  get('/getip',{
-    limit:pageSize.value,
-    page:num,
-  })
-      .then((res)=>{
-        tableData.value=res.results
-        sum.value=res.sum
-        total.value=res.total
-      })
-      .catch((err)=>{
-        console.log(err)
-        alert('获取数据失败')
-      })
+  // get('/getip',{
+  //   limit:pageSize.value,
+  //   page:num,
+  // })
+  //     .then((res)=>{
+  //       tableData.value=res.results
+  //       sum.value=res.sum
+  //       total.value=res.total
+  //     })
+  //     .catch((err)=>{
+  //       console.log(err)
+  //       alert('获取数据失败')
+  //     })
 }
 onMounted(  ()=>{
-  get('/getip',{
-    limit:pageSize.value,
-    page:page.value,
-  })
-      .then((res)=>{
-        tableData.value=res.results
-        sum.value=res.sum
-        total.value=res.total
-      })
-      .catch((err)=>{
-        console.log(err)
-        alert('获取数据失败')
-      })
+  if (statsDisabled) {
+    return
+  }
+  // get('/getip',{
+  //   limit:pageSize.value,
+  //   page:page.value,
+  // })
+  //     .then((res)=>{
+  //       tableData.value=res.results
+  //       sum.value=res.sum
+  //       total.value=res.total
+  //     })
+  //     .catch((err)=>{
+  //       console.log(err)
+  //       alert('获取数据失败')
+  //     })
 
 })
 </script>
 
 <template>
 <div class="wrap">
+  <p v-if="statsDisabled" class="notice">
+    Visitor statistics are temporarily disabled for the Vercel deployment.
+  </p>
   <h4 class="sum">网站总浏览量:{{sum}}</h4>
   <el-table :data="tableData" border style="width: 100%">
     <el-table-column prop="country" label="国家" width="180" />
@@ -75,6 +85,10 @@ onMounted(  ()=>{
 .sum{
   text-align: right;
   margin: 0.2rem;
+}
+.notice{
+  margin: 0.2rem;
+  color: #666;
 }
 .example-pagination-block{
   margin: 0.3rem auto;
