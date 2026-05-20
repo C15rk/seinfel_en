@@ -1,5 +1,6 @@
 <script setup>
 import 'public/js/rem.js';
+import { Analytics } from '@vercel/analytics/nuxt';
 import { useRoute } from 'vue-router'
 import { provide,ref,onMounted } from 'vue';
 let navbarVisible = ref(true);
@@ -34,6 +35,7 @@ onMounted(async ()=>{
 </script>
 
 <template>
+  <Analytics />
   <NuxtLayout :key="layoutKey">
     <NuxtPage :key="pageKey" />
   </NuxtLayout>
