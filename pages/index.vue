@@ -25,6 +25,39 @@ definePageMeta({
 
 let newInfo = ref([
   {
+    txt: 'Automechanika Frankfurt 2026 Concludes Successfully',
+    time: '2026-9-8',
+    url: '/images/index/automechanika-frankfurt-2026-1.webp',
+    info: {
+      title: 'Automechanika Frankfurt 2026\nConcludes Successfully',
+      urls: [
+        { path: '/images/index/automechanika-frankfurt-2026-1.webp', tip: '' },
+        { path: '/images/index/automechanika-frankfurt-2026-2.webp', tip: '' },
+        { path: '/images/index/automechanika-frankfurt-2026-3.webp', tip: '' },
+        { path: '/images/index/automechanika-frankfurt-2026-4.webp', tip: '' },
+        { path: '/images/index/automechanika-frankfurt-2026-5.webp', tip: '' },
+      ],
+      video: '',
+      txt: `As the world’s premier benchmark event for automotive parts and the aftermarket, Automechanika Frankfurt 2026 has drawn to a successful close. Bringing together high-quality automotive resources worldwide and facilitating supply chain connections between domestic and overseas markets, the exhibition serves as a vital platform for enterprises to deepen their presence in Europe and expand global cooperation.
+
+Zhaohui Corporation has long specialized in automotive filtration. At this show, we presented our core products and technical solutions, laying a solid foundation for further development in the European market and expansion of global sales channels.
+
+01 Visitors from Multiple Countries, Diverse Customer Profiles at Booth
+
+Our booth welcomed buyers from across the globe, including Germany, Poland, the United States, Brazil, Egypt, Turkey, Argentina, Oman, North Macedonia, Moldova, Catania, Azerbaijan, Morocco, the Netherlands, Iraq, Indonesia, Singapore and Ecuador. The attendees represented varied business types: manufacturing plants, importers & distributors, online retailers, private label OEM partners, channel traders and regional agents.
+
+We received visits from leading industry players such as CAR Group (Germany), Inter Cars (Poland), Hella (USA), Wega (Brazil) and Hella Germany. Visitors showed strong interest in our product portfolio including air filters, cabin air filters and battery filters, and expressed clear intentions for future cooperation.
+
+02 Global Production Layout Wins High Recognition from Overseas Customers
+
+Overseas customers highly recognize ZFT Group’s global manufacturing network. The Group operates overseas production bases in Cambodia, Vietnam, Malaysia and other locations. Together with its headquarters in Singapore and overseas sales networks covering Europe, America, the Middle East and Southeast Asia, ZFT achieves local delivery close to target markets. Leveraging our multi-region manufacturing footprint, we provide global partners with stable supply, flexible delivery and local supporting services, effectively helping customers optimize supply chain costs — this is one of our key strengths attracting numerous overseas buyers at the exhibition.
+
+Based on all on-site discussions, most overseas distributors and end purchasers are actively optimizing their supply chains, searching for automotive filter suppliers with cost-effective products, stable delivery and mature quality control. Their requirements align perfectly with Zhaohui Corporation’s strengths and resources.
+
+Moving forward, Zhaohui Corporation will continue to focus on automotive filtration, further improve overseas supply systems and commercial service capabilities. We aim to work hand in hand with global partners to achieve mutual benefits and jointly explore new opportunities within the industry!`
+    }
+  },
+  {
     txt: "ZFT Group Returns to the 2026 AHR Expo",
     time: '2026-4-2',
     url: '/images/index/43-1.jpg',
