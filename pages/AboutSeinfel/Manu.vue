@@ -23,7 +23,7 @@ useHead({
         Equipment, Safety Cabinets, Domestic Appliances, Air purifiers,
         Industrial Vacuum, Respiratory and more…
       </p>
-      <!-- <img src="../../public/images/about/3.webp" alt=""> -->
+      <img src="../../public/images/about/3.webp" alt="" />
       <p class="item">
         In order to offer a high-end manufacturing service and distribution our
         investment throughout all of our manufacturing facilities starts with
